@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/buttons"
+        android:background="#a50044">
+
+        <Button
+            android:id="@+id/btnsetreminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#004d98"
+            android:text="Set Reminder" />
+
+        <Button
+            android:id="@+id/btncancelreminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#004d98"
+            android:text="Cancel Reminder" />
+
+        <Button
+            android:id="@+id/btnexit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#004d98"
+            android:text="Exit"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/buttons"
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+
+        android:background="#004d98"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/reminder_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="72dp"
+            android:height="140dp"
+            android:hint="Add Reminder"
+            android:inputType="textCapWords|textMultiLine"
+            android:lines="4"
+            android:minLines="4"
+            android:textColor="@android:color/white"
+            android:textColorHint="#616060"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/liner"
+        android:background="#044483"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp"
+                android:layout_marginTop="16dp"
+                android:height="72dp"
+                android:gravity="center_vertical"
+                android:text="Details"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="72dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/date_icon"
+                android:drawablePadding="20dp"
+                android:hint="Date"
+                android:textColor="#FFFF"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/etdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="30dp"
+                android:clickable="true"
+                android:drawablePadding="20dp"
+                android:gravity="center"
+                android:hint="Date"
+                android:textColor="#FFFF"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="72dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/time_icon"
+                android:drawablePadding="20dp"
+                android:hint="Time"
+                android:textColor="#FFFF"
+                android:textSize="25dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/ettime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="72dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/time_icon"
+                android:drawablePadding="20dp"
+                android:hint="Time"
+                android:textColor="#FFFF"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/etrepeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="72dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/repeat_icon"
+                android:drawablePadding="20dp"
+                android:hint="Repeat"
+                android:textColor="#FFFF"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

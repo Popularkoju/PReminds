@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/reminder_image"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/title_icon" />
+
+    <TextView
+        android:id="@+id/reminder_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/reminder_image"
+        android:paddingLeft="16dp"
+        android:text="Title"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/reminder_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reminder_title"
+        android:layout_toRightOf="@+id/reminder_image"
+        android:paddingLeft="16dp"
+        android:text="Date "
+
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/reminder_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reminder_date"
+        android:layout_toRightOf="@+id/reminder_image"
+        android:paddingLeft="16dp"
+        android:text="Date "
+
+        android:textSize="25dp" />
+
+</RelativeLayout>
